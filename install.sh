@@ -251,6 +251,55 @@ select_theme() {
     log_success "Tema selecionado: $SELECTED_THEME"
 }
 
+# Gaming setup selection
+select_gaming() {
+    echo ""
+    echo -e "${BOLD}${MAGENTA}Configurar para Gaming? 🎮${RESET}"
+    echo ""
+    echo -e "${CYAN}O setup de gaming inclui:${RESET}"
+    echo -e "  ${GREEN}✓${RESET} Detecção automática de GPU (NVIDIA/AMD/Intel)"
+    echo -e "  ${GREEN}✓${RESET} Instalação de drivers otimizados"
+    echo -e "  ${GREEN}✓${RESET} Steam, Lutris, Wine/Proton"
+    echo -e "  ${GREEN}✓${RESET} GameMode e MangoHud"
+    echo -e "  ${GREEN}✓${RESET} Otimizações de performance no Hyprland"
+    echo -e "  ${GREEN}✓${RESET} Suporte a Vulkan"
+    echo ""
+    
+    read -p "$(echo -e ${YELLOW}Instalar ferramentas de gaming? [S/n]:${RESET} )" choice
+    if [[ "$choice" =~ ^[Nn] ]]; then
+        SETUP_GAMING="no"
+        log_info "Setup de gaming pulado"
+    else
+        SETUP_GAMING="yes"
+        log_success "Setup de gaming será instalado"
+        
+        # Detect GPU
+        source "$SCRIPT_DIR/scripts/detect-gpu.sh"
+    fi
+}
+
+# Install gaming setup
+install_gaming_setup() {
+    if [[ "$SETUP_GAMING" != "yes" ]]; then
+        return
+    fi
+    
+    log_info "Instalando setup de gaming..."
+    
+    # Run gaming installer
+    source "$SCRIPT_DIR/scripts/install-gaming.sh" "$DISTRO" "$GPU_VENDOR"
+    
+    # Add gaming rules to Hyprland
+    if [[ -f "$CONFIG_DIR/hypr/hyprland.conf" ]]; then
+        echo "" >> "$CONFIG_DIR/hypr/hyprland.conf"
+        echo "# Gaming optimizations" >> "$CONFIG_DIR/hypr/hyprland.conf"
+        echo "source = ~/.config/hypr/gaming.conf" >> "$CONFIG_DIR/hypr/hyprland.conf"
+        log_success "Regras de gaming adicionadas ao Hyprland"
+    fi
+    
+    log_success "Setup de gaming concluído!"
+}
+
 # Install illogical-impulse
 install_illogical_impulse() {
     log_info "Instalando illogical-impulse (Quickshell)..."
@@ -361,6 +410,9 @@ show_completion() {
     echo -e "${CYAN}Configuração instalada:${RESET}"
     echo -e "  ${BLUE}•${RESET} Barra: ${MAGENTA}$SELECTED_BAR${RESET}"
     echo -e "  ${BLUE}•${RESET} Tema: ${MAGENTA}$SELECTED_THEME${RESET}"
+    if [[ "$SETUP_GAMING" == "yes" ]]; then
+        echo -e "  ${BLUE}•${RESET} Gaming: ${GREEN}✓ Instalado${RESET} (GPU: $GPU_VENDOR)"
+    fi
     echo ""
     echo -e "${CYAN}Comandos úteis:${RESET}"
     echo -e "  ${BLUE}•${RESET} theme-switcher.sh - Trocar tema"
@@ -418,7 +470,11 @@ main() {
     select_theme
     
     echo ""
+    select_gaming
+    
+    echo ""
     install_dotfiles
+    install_gaming_setup
     post_install
     
     echo ""

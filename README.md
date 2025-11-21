@@ -23,6 +23,7 @@
 - ⚡ **Instalação One-Command** - Um único comando para setup completo
 - 🎨 **3 Temas Lindos** - Rosé Pine, Catppuccin Mocha, Nord
 - 📊 **Escolha de Barra** - Waybar (simples) ou illogical-impulse (avançado com IA)
+- 🎮 **Suporte a Gaming** - Detecção automática de GPU e instalação de drivers/ferramentas
 - 🔒 **Backup Automático** - Seus configs antigos ficam seguros
 - 🚀 **Multi-Distro** - Suporte para Arch, Fedora, Debian/Ubuntu
 - 🎯 **TUI Interativa** - Interface linda no terminal
@@ -56,6 +57,30 @@ Sistema completo de widgets com features avançadas:
 - 🎯 **Widgets Avançados** - Customizáveis e interativos
 
 > **Nota:** illogical-impulse requer mais dependências e é instalado via script oficial do [end-4/dots-hyprland](https://github.com/end-4/dots-hyprland)
+
+## 🎮 Suporte a Gaming
+
+O Stellar Dots inclui setup completo para gaming com:
+
+### Detecção Automática de GPU
+- ✅ **NVIDIA** - Drivers proprietários + Vulkan
+- ✅ **AMD** - Mesa + AMDVLK + Vulkan
+- ✅ **Intel** - Mesa + Vulkan
+- ✅ **Sistemas Híbridos** - Suporte a laptops com GPU dedicada + integrada
+
+### Ferramentas Instaladas
+- 🎮 **Steam** - Plataforma de jogos
+- 🎯 **Lutris** - Gerenciador de jogos
+- 🍷 **Wine/Proton** - Compatibilidade com jogos Windows
+- ⚡ **GameMode** - Otimizações de performance
+- 📊 **MangoHud** - Overlay de FPS e monitoramento
+- 🎨 **GOverlay** - Interface gráfica para MangoHud
+
+### Otimizações Hyprland
+- Desabilita animações em jogos para melhor performance
+- Window rules específicas para jogos populares
+- Suporte a VRR (Variable Refresh Rate)
+- Configurações de fullscreen otimizadas
 
 ## 📦 O Que Está Incluído
 
