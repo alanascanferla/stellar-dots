@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Dots - Desktop Preview</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* Stellar Theme Palette */
+            --bg: #0f0f13;
+            --surface: #1a1a24;
+            --overlay: #2a2a35;
+            --text: #e0def4;
+            --iris: #b4a7d6;
+            --rose: #e8b4d4;
+            --love: #eb6f92;
+            --foam: #9ccfd8;
+            --gold: #f6c177;
+            --muted: #6e6a86;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+            background-image: radial-gradient(circle at 50% 50%, rgba(180, 167, 214, 0.05) 0%, transparent 50%);
+        }
+
+        /* Waybar Simulation */
+        .bar {
+            background: rgba(15, 15, 19, 0.8);
+            backdrop-filter: blur(10px);
+            height: 38px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .modules-left,
+        .modules-right {
+            display: flex;
+            gap: 10px;
+        }
+
+        .module {
+            padding: 4px 12px;
+            border-radius: 8px;
+            background: var(--surface);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .workspaces {
+            display: flex;
+            gap: 5px;
+            background: transparent;
+        }
+
+        .workspace {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--surface);
+            color: var(--muted);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .workspace.active {
+            background: var(--iris);
+            color: var(--bg);
+            box-shadow: 0 0 10px rgba(180, 167, 214, 0.4);
+        }
+
+        .icon {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Window Simulation */
+        .desktop-area {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .window {
+            background: var(--bg);
+            border-radius: 12px;
+            position: relative;
+            /* Hyprland Active Border Gradient Simulation */
+            padding: 2px;
+            background: linear-gradient(45deg, var(--iris), var(--rose));
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .window-content {
+            background: var(--bg);
+            border-radius: 10px;
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .terminal {
+            font-family: 'JetBrains Mono', monospace;
+            padding: 20px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .prompt {
+            color: var(--rose);
+        }
+
+        .path {
+            color: var(--foam);
+        }
+
+        .cmd {
+            color: var(--text);
+        }
+
+        .comment {
+            color: var(--muted);
+        }
+
+        .keyword {
+            color: var(--iris);
+        }
+
+        .string {
+            color: var(--gold);
+        }
+
+        .fetch-logo {
+            color: var(--iris);
+            float: left;
+            margin-right: 20px;
+            line-height: 1.2;
+        }
+
+        /* Floating Particles (CSS only) */
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--iris);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: float 10s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(-100vh) translateX(50px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simulated Waybar -->
+    <div class="bar">
+        <div class="modules-left">
+            <div class="module" style="background: var(--iris); color: var(--bg);">
+                <span class="icon"></span>
+            </div>
+            <div class="workspaces">
+                <div class="workspace active">✦</div>
+                <div class="workspace">✦</div>
+                <div class="workspace">✦</div>
+                <div class="workspace">✦</div>
+                <div class="workspace">✦</div>
+            </div>
+        </div>
+        <div class="modules-center">
+            <div class="module">
+                <span class="icon"></span> Spotify - Lofi Beats
+            </div>
+        </div>
+        <div class="modules-right">
+            <div class="module"><span class="icon" style="color: var(--foam)"></span> Wifi</div>
+            <div class="module"><span class="icon" style="color: var(--rose)"></span> 80%</div>
+            <div class="module"><span class="icon" style="color: var(--gold)"></span> 95%</div>
+            <div class="module" style="background: var(--overlay)">21 Nov 19:48</div>
+        </div>
+    </div>
+
+    <!-- Simulated Desktop Windows -->
+    <div class="desktop-area">
+        <!-- Terminal Window -->
+        <div class="window">
+            <div class="window-content terminal">
+                <div class="fetch-logo">
+                    /\<br>
+                    / \<br>
+                    / \<br>
+                    / \<br>
+                    / __ \<br>
+                    / | | \<br>
+                    /____|__|____\
+                </div>
+                <div>
+                    <span class="prompt">alana@stellar</span> <span class="path">~</span> <span
+                        class="cmd">neofetch</span><br>
+                    ------------------<br>
+                    <span class="keyword">OS</span>: Arch Linux x86_64<br>
+                    <span class="keyword">Host</span>: Stellar Machine<br>
+                    <span class="keyword">Kernel</span>: 6.8.9-arch1-1<br>
+                    <span class="keyword">Uptime</span>: 4 hours, 20 mins<br>
+                    <span class="keyword">Packages</span>: 842 (pacman)<br>
+                    <span class="keyword">Shell</span>: zsh 5.9<br>
+                    <span class="keyword">WM</span>: Hyprland (Stellar Theme)<br>
+                    <span class="keyword">Theme</span>: Stellar [GTK2/3]<br>
+                    <span class="keyword">Icons</span>: Papirus-Dark [GTK2/3]<br>
+                    <span class="keyword">Terminal</span>: kitty<br>
+                    <br>
+                    <span style="color: var(--bg)">███</span>
+                    <span style="color: var(--love)">███</span>
+                    <span style="color: var(--gold)">███</span>
+                    <span style="color: var(--rose)">███</span>
+                    <span style="color: var(--iris)">███</span>
+                    <span style="color: var(--foam)">███</span>
+                </div>
+                <br>
+                <span class="prompt">alana@stellar</span> <span class="path">~/projects</span> <span class="cmd">git
+                    push origin main</span><br>
+                <span class="comment"># Sending code to the stars... 🚀</span><br>
+                Enumerating objects: 69, done.<br>
+                Writing objects: 100% (57/57), done.<br>
+                <span class="path">➜</span> <span class="cursor">_</span>
+            </div>
+        </div>
+
+        <!-- Code Editor / File Manager Simulation -->
+        <div class="window">
+            <div class="window-content terminal">
+                <div
+                    style="border-bottom: 1px solid var(--overlay); padding-bottom: 10px; margin-bottom: 10px; display: flex; gap: 10px;">
+                    <span style="color: var(--iris)">main.js</span>
+                    <span style="color: var(--muted)">style.css</span>
+                    <span style="color: var(--muted)">README.md</span>
+                </div>
+                <span class="keyword">import</span> { <span class="string">System</span> } <span
+                    class="keyword">from</span> <span class="string">'./system.js'</span>;<br>
+                <br>
+                <span class="keyword">const</span> canvas = document.getElementById(<span
+                    class="string">'canvas'</span>);<br>
+                <span class="keyword">const</span> system = <span class="keyword">new</span> System(canvas);<br>
+                <br>
+                <span class="comment">// Initialize High Performance Mode</span><br>
+                <span class="keyword">function</span> <span class="function">animate</span>() {<br>
+                &nbsp;&nbsp;requestAnimationFrame(animate);<br>
+                &nbsp;&nbsp;system.update();<br>
+                &nbsp;&nbsp;system.draw();<br>
+                }<br>
+                <br>
+                animate();
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
