@@ -73,7 +73,7 @@ Sistema completo de widgets com features avançadas:
 ### Instalação Rápida
 
 ```bash
-git clone https://github.com/SEU_USUARIO/stellar-dots.git
+git clone https://github.com/alanascanferla/stellar-dots.git
 cd stellar-dots
 ./install.sh
 ```
@@ -82,7 +82,7 @@ cd stellar-dots
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/SEU_USUARIO/stellar-dots.git
+   git clone https://github.com/alanascanferla/stellar-dots.git
    cd stellar-dots
    ```
 
