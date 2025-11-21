@@ -1,0 +1,105 @@
+:root {
+    --bg-color: #0f0f13;
+    --text-color: #ffffff;
+    --accent-color: #b4a7d6;
+    /* Pastel Purple */
+    --secondary-color: #e8b4d4;
+    /* Pastel Pink */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    /* Prevent scrollbars */
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none;
+    /* Let clicks pass through to canvas */
+}
+
+.content {
+    text-align: center;
+    pointer-events: auto;
+    /* Re-enable clicks for buttons */
+    background: rgba(15, 15, 19, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.stat-item span {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(180, 167, 214, 0.3);
+}

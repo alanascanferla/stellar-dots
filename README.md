@@ -22,8 +22,8 @@
 
 ### Core
 - ⚡ **Instalação One-Command** - Um único comando para setup completo
-- 🎨 **7 Temas Lindos** - Rosé Pine, Catppuccin, Nord, Tokyo Night, Dracula, Gruvbox, Everforest
-- 📊 **Escolha de Barra** - Waybar (simples) ou illogical-impulse (avançado com IA)
+- 🎨 **7 Temas Lindos** - Rosé Pine, Catppuccin, Nord, Tokyo Night, Dracula, Gruvbox,- **Temas**: Rosé Pine, Catppuccin Mocha, Nord e **Stellar (Novo!)**
+- **Escolha de Barra**: Waybar (Simples) ou Illogical-Impulse (Avançado) com IA)
 - 🔒 **Backup Automático** - Seus configs antigos ficam seguros
 - 🚀 **Multi-Distro** - Suporte para Arch, Fedora, Debian/Ubuntu
 - 🎯 **TUI Interativa** - Interface linda no terminal

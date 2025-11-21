@@ -226,9 +226,11 @@ select_theme() {
     echo -e "${MAGENTA}3)${RESET} Nord"
     echo -e "   ${CYAN}Tema ártico com azuis e cinzas gelados${RESET}"
     echo ""
+    echo -e "${MAGENTA}4)${RESET} Stellar ${BLUE}(Tema Oficial)${RESET}"
+    echo ""
     
     while true; do
-        read -p "$(echo -e ${YELLOW}Escolha [1-3]:${RESET} )" choice
+        read -p "$(echo -e ${YELLOW}Escolha [1-4]:${RESET} )" choice
         case $choice in
             1)
                 SELECTED_THEME="rose-pine"
