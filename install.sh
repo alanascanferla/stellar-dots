@@ -174,6 +174,44 @@ install_dependencies() {
     esac
 }
 
+# Bar selection
+select_bar() {
+    echo ""
+    echo -e "${BOLD}${MAGENTA}Selecione a barra/widgets:${RESET}"
+    echo ""
+    echo -e "${MAGENTA}1)${RESET} Waybar ${BLUE}(Recomendado - Simples e estável)${RESET}"
+    echo -e "   ${CYAN}Barra superior minimalista com módulos essenciais${RESET}"
+    echo -e "   ${GREEN}✓ Leve e rápido${RESET}"
+    echo -e "   ${GREEN}✓ Fácil de customizar${RESET}"
+    echo ""
+    echo -e "${MAGENTA}2)${RESET} illogical-impulse (Quickshell) ${YELLOW}(Avançado)${RESET}"
+    echo -e "   ${CYAN}Sistema completo de widgets com IA e features avançadas${RESET}"
+    echo -e "   ${GREEN}✓ Overview com live previews${RESET}"
+    echo -e "   ${GREEN}✓ Integração com Gemini AI e Ollama${RESET}"
+    echo -e "   ${GREEN}✓ Cores auto-geradas do wallpaper${RESET}"
+    echo -e "   ${YELLOW}⚠ Requer mais dependências${RESET}"
+    echo ""
+    
+    while true; do
+        read -p "$(echo -e ${YELLOW}Escolha [1-2]:${RESET} )" choice
+        case $choice in
+            1)
+                SELECTED_BAR="waybar"
+                break
+                ;;
+            2)
+                SELECTED_BAR="illogical-impulse"
+                break
+                ;;
+            *)
+                log_error "Opção inválida. Escolha 1 ou 2."
+                ;;
+        esac
+    done
+    
+    log_success "Barra selecionada: $SELECTED_BAR"
+}
+
 # Theme selection
 select_theme() {
     echo ""
@@ -213,12 +251,62 @@ select_theme() {
     log_success "Tema selecionado: $SELECTED_THEME"
 }
 
+# Install illogical-impulse
+install_illogical_impulse() {
+    log_info "Instalando illogical-impulse (Quickshell)..."
+    
+    echo ""
+    echo -e "${CYAN}illogical-impulse oferece:${RESET}"
+    echo -e "  ${GREEN}✓${RESET} Overview com live previews de apps"
+    echo -e "  ${GREEN}✓${RESET} Integração com IA (Gemini API e Ollama)"
+    echo -e "  ${GREEN}✓${RESET} Cores auto-geradas do wallpaper (Material Design)"
+    echo -e "  ${GREEN}✓${RESET} Widgets avançados e customizáveis"
+    echo ""
+    echo -e "${YELLOW}Nota:${RESET} Isso irá executar o instalador oficial do illogical-impulse"
+    echo -e "${YELLOW}Todas as dependências serão instaladas automaticamente${RESET}"
+    echo ""
+    
+    read -p "$(echo -e ${GREEN}Continuar com instalação do illogical-impulse? [S/n]:${RESET} )" confirm
+    if [[ "$confirm" =~ ^[Nn] ]]; then
+        log_warning "Instalação do illogical-impulse cancelada. Usando Waybar."
+        SELECTED_BAR="waybar"
+        return
+    fi
+    
+    log_info "Executando instalador do illogical-impulse..."
+    bash <(curl -s https://ii.clsty.link/get)
+    
+    if [[ $? -eq 0 ]]; then
+        log_success "illogical-impulse instalado com sucesso!"
+        
+        # Apply our theme colors to illogical-impulse if possible
+        if [[ -f "$HOME/.config/ags/user_options.js" ]]; then
+            log_info "Aplicando tema $SELECTED_THEME ao illogical-impulse..."
+            # Note: This would require custom integration
+            log_warning "Customização de tema para illogical-impulse deve ser feita manualmente"
+        fi
+    else
+        log_error "Erro ao instalar illogical-impulse. Revertendo para Waybar."
+        SELECTED_BAR="waybar"
+    fi
+}
+
 # Install dotfiles
 install_dotfiles() {
     log_info "Instalando dotfiles..."
     
-    # Copy config files
-    cp -r "$SCRIPT_DIR/.config/"* "$CONFIG_DIR/"
+    # Copy config files (skip waybar if using illogical-impulse)
+    if [[ "$SELECTED_BAR" == "waybar" ]]; then
+        cp -r "$SCRIPT_DIR/.config/"* "$CONFIG_DIR/"
+    else
+        # Copy everything except waybar
+        for dir in "$SCRIPT_DIR/.config/"*/; do
+            dirname=$(basename "$dir")
+            if [[ "$dirname" != "waybar" ]]; then
+                cp -r "$dir" "$CONFIG_DIR/"
+            fi
+        done
+    fi
     
     # Apply selected theme
     cp "$SCRIPT_DIR/themes/$SELECTED_THEME/colors.conf" "$CONFIG_DIR/hypr/colors.conf"
@@ -231,6 +319,11 @@ install_dotfiles() {
     # Copy wallpapers
     mkdir -p "$HOME/Pictures/wallpapers"
     cp -r "$SCRIPT_DIR/wallpapers/"* "$HOME/Pictures/wallpapers/"
+    
+    # Install illogical-impulse if selected
+    if [[ "$SELECTED_BAR" == "illogical-impulse" ]]; then
+        install_illogical_impulse
+    fi
     
     log_success "Dotfiles instalados com sucesso!"
 }
@@ -265,9 +358,17 @@ show_completion() {
     echo -e "  ${BLUE}2.${RESET} Selecione Hyprland no seu display manager"
     echo -e "  ${BLUE}3.${RESET} Aproveite seu novo setup! 🚀"
     echo ""
+    echo -e "${CYAN}Configuração instalada:${RESET}"
+    echo -e "  ${BLUE}•${RESET} Barra: ${MAGENTA}$SELECTED_BAR${RESET}"
+    echo -e "  ${BLUE}•${RESET} Tema: ${MAGENTA}$SELECTED_THEME${RESET}"
+    echo ""
     echo -e "${CYAN}Comandos úteis:${RESET}"
     echo -e "  ${BLUE}•${RESET} theme-switcher.sh - Trocar tema"
     echo -e "  ${BLUE}•${RESET} wallpaper-changer.sh - Trocar wallpaper"
+    if [[ "$SELECTED_BAR" == "illogical-impulse" ]]; then
+        echo -e "  ${BLUE}•${RESET} Super + / - Lista de atalhos (illogical-impulse)"
+        echo -e "  ${BLUE}•${RESET} Super + Tab - Overview com live previews"
+    fi
     echo -e "  ${BLUE}•${RESET} Super + Q - Fechar janela"
     echo -e "  ${BLUE}•${RESET} Super + Return - Abrir terminal"
     echo -e "  ${BLUE}•${RESET} Super + D - Launcher"
@@ -309,6 +410,9 @@ main() {
     if [[ ! "$install_deps" =~ ^[Nn] ]]; then
         install_dependencies
     fi
+    
+    echo ""
+    select_bar
     
     echo ""
     select_theme

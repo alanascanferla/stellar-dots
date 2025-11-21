@@ -29,9 +29,12 @@ O instalador irá:
 1. **Detectar seu sistema** - Identifica automaticamente sua distribuição Linux
 2. **Criar backup** - Salva seus configs existentes em `~/.config-backup-TIMESTAMP/`
 3. **Perguntar sobre dependências** - Você pode escolher instalar ou pular
-4. **Selecionar tema** - Escolha entre Rosé Pine, Catppuccin ou Nord
-5. **Instalar dotfiles** - Copia todos os arquivos de configuração
-6. **Configurar scripts** - Adiciona utilitários ao PATH
+4. **Selecionar barra** - Escolha entre Waybar (simples) ou illogical-impulse (avançado)
+5. **Selecionar tema** - Escolha entre Rosé Pine, Catppuccin ou Nord
+6. **Instalar dotfiles** - Copia todos os arquivos de configuração
+7. **Configurar scripts** - Adiciona utilitários ao PATH
+
+> **Nota:** Se escolher illogical-impulse, o instalador oficial será executado automaticamente
 
 ### 4. Finalize a Instalação
 

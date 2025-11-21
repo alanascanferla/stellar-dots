@@ -42,6 +42,20 @@ Paleta pastel moderna com tons de café, chocolate e cores vibrantes.
 ### Nord
 Tema ártico minimalista com azuis gelados e cinzas elegantes.
 
+## 📊 Opções de Barra
+
+### Waybar (Recomendado)
+Barra superior minimalista e estável com módulos essenciais. Leve, rápido e fácil de customizar.
+
+### illogical-impulse (Avançado)
+Sistema completo de widgets com features avançadas:
+- 🔍 **Overview** - Live previews de apps abertos
+- 🤖 **IA Integrada** - Gemini API e Ollama
+- 🎨 **Cores Auto-geradas** - Material Design baseado no wallpaper
+- 🎯 **Widgets Avançados** - Customizáveis e interativos
+
+> **Nota:** illogical-impulse requer mais dependências e é instalado via script oficial do [end-4/dots-hyprland](https://github.com/end-4/dots-hyprland)
+
 ## 📦 O Que Está Incluído
 
 - **Hyprland** - Compositor Wayland com animações incríveis
