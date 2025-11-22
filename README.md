@@ -55,6 +55,8 @@
 - 📸 **Scripts Utilitários** - Screenshot, wallpaper, gravação de tela
 - 🌊 **Animações Suaves** - Transições e efeitos modernos
 - 💎 **Glassmorphism** - Blur e transparência em tudo
+- ✨ **Menu Glassmorphism** - Launchers modernos com efeito de vidro (sidebar + full menu)
+
 
 ## 🎨 Temas
 
@@ -155,6 +157,8 @@ cd stellar-dots
 | `Super + Return` | Abrir terminal |
 | `Super + Q` | Fechar janela |
 | `Super + D` | Launcher de apps |
+| `Super + Space` | Menu glassmorphism (full) |
+| `Super + A` | Menu glassmorphism (sidebar) |
 | `Super + W` | Trocar wallpaper |
 | `Super + T` | Trocar tema |
 | `Super + L` | Lock screen |
@@ -163,6 +167,7 @@ cd stellar-dots
 | `Super + R` | Gravar tela |
 | `Super + 1-9` | Trocar workspace |
 
+
 [Ver todos os atalhos](docs/HOTKEYS.md)
 
 ## 📖 Documentação
@@ -170,6 +175,8 @@ cd stellar-dots
 - [Guia de Instalação Completo](docs/INSTALACAO.md)
 - [Referência de Atalhos](docs/HOTKEYS.md)
 - [Guia de Customização](docs/CUSTOMIZACAO.md)
+- [Menu Glassmorphism](docs/GLASSMORPHISM_MENU.md)
+
 
 ## 🖼️ Screenshots
 

@@ -1,0 +1,135 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+ *                   ✨ GLASSMORPHISM SIDEBAR LAUNCHER ✨
+ *                          Stellar Dots Rice
+ *                    Inspired by modern app sidebars
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    display-drun: "";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 10";
+    sidebar-mode: false;
+}
+
+* {
+    /* Glassmorphism Colors - Pink to Red Gradient */
+    bg-base: #191724;
+    bg-glass: #1f1d2e40;  /* Very transparent for glass effect */
+    
+    /* Gradient colors */
+    gradient-start: #eb6f9280;  /* Pink with transparency */
+    gradient-end: #ea384880;    /* Red with transparency */
+    
+    fg: #e0def4;
+    fg-dim: #908caa;
+    
+    accent: #eb6f92;
+    accent-bright: #f6c177;
+    
+    background-color: transparent;
+    text-color: @fg;
+    
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    location: west;
+    anchor: west;
+    width: 90px;
+    height: 100%;
+    x-offset: 12px;
+    
+    background-color: @bg-glass;
+    border: 1px solid;
+    border-color: #ffffff20;
+    border-radius: 24px;
+    
+    /* Gradient background - simulated with transparency */
+    background-image: linear-gradient(180deg, @gradient-start 0%, @gradient-end 100%);
+}
+
+mainbox {
+    padding: 16px 8px;
+    spacing: 12px;
+}
+
+/* Search bar - minimal for sidebar */
+inputbar {
+    enabled: false;
+}
+
+/* App list */
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 10;
+    spacing: 8px;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+    fixed-height: false;
+    border: 0;
+}
+
+element {
+    padding: 12px;
+    border-radius: 16px;
+    background-color: transparent;
+    orientation: vertical;
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg-dim;
+}
+
+element selected.normal {
+    background-color: #ffffff15;
+    text-color: @fg;
+    border: 1px solid;
+    border-color: #ffffff30;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg-dim;
+}
+
+/* Icon styling */
+element-icon {
+    size: 32px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    margin: 0 0 4px 0;
+}
+
+/* Text below icon */
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    text-color: inherit;
+    font: "JetBrainsMono Nerd Font 8";
+}
+
+/* Scrollbar */
+scrollbar {
+    enabled: false;
+}
+
+/* Message box */
+message {
+    enabled: false;
+}
+
+textbox {
+    padding: 8px;
+    background-color: @bg-glass;
+    text-color: @fg;
+    border-radius: 12px;
+}

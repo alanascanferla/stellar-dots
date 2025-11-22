@@ -1,0 +1,204 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+ *                    ✨ GLASSMORPHISM FULL MENU ✨
+ *                          Stellar Dots Rice
+ *                  Modern app launcher with glass effect
+ * ═══════════════════════════════════════════════════════════════════════════ */
+
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    display-drun: "  Applications";
+    display-run: "  Commands";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+* {
+    /* Glassmorphism Colors - Pink to Red Gradient */
+    bg-base: #191724;
+    bg-glass: #1f1d2e60;  /* Semi-transparent for glass effect */
+    bg-glass-light: #26233a50;
+    
+    /* Gradient colors */
+    gradient-start: #eb6f9260;  /* Pink with transparency */
+    gradient-mid: #c4a7e760;    /* Purple with transparency */
+    gradient-end: #ea384860;    /* Red with transparency */
+    
+    fg: #e0def4;
+    fg-dim: #908caa;
+    fg-bright: #ffffff;
+    
+    accent: #eb6f92;
+    accent-alt: #c4a7e7;
+    accent-bright: #f6c177;
+    
+    background-color: transparent;
+    text-color: @fg;
+    
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    location: center;
+    width: 720px;
+    height: 580px;
+    
+    background-color: @bg-glass;
+    border: 2px solid;
+    border-color: #ffffff25;
+    border-radius: 24px;
+    
+    /* Shadow for depth */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+mainbox {
+    padding: 24px;
+    spacing: 16px;
+}
+
+/* Header with search */
+inputbar {
+    background-color: @bg-glass-light;
+    border: 2px solid;
+    border-color: #ffffff20;
+    border-radius: 16px;
+    padding: 14px 18px;
+    spacing: 12px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+    font: "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    placeholder: "Search applications...";
+    placeholder-color: @fg-dim;
+    text-color: @fg-bright;
+}
+
+/* Mode switcher (drun/run) */
+mode-switcher {
+    background-color: @bg-glass-light;
+    border-radius: 12px;
+    padding: 6px;
+    spacing: 8px;
+}
+
+button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-color: @fg-dim;
+    cursor: pointer;
+}
+
+button selected {
+    background-color: @accent;
+    text-color: @bg-base;
+    font: "JetBrainsMono Nerd Font Bold 11";
+}
+
+/* App list */
+listview {
+    background-color: transparent;
+    columns: 2;
+    lines: 6;
+    spacing: 8px;
+    cycle: true;
+    dynamic: true;
+    layout: vertical;
+    fixed-height: true;
+    border: 0;
+}
+
+element {
+    padding: 12px 14px;
+    spacing: 12px;
+    border-radius: 14px;
+    background-color: transparent;
+    orientation: horizontal;
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element normal.active {
+    background-color: @bg-glass-light;
+    text-color: @accent-alt;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color: @bg-base;
+    border: 2px solid;
+    border-color: @accent-bright;
+}
+
+element selected.active {
+    background-color: @accent-alt;
+    text-color: @bg-base;
+    border: 2px solid;
+    border-color: @accent-bright;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* Icon styling */
+element-icon {
+    size: 36px;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+/* Text styling */
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit;
+}
+
+/* Scrollbar */
+scrollbar {
+    width: 6px;
+    handle-width: 6px;
+    handle-color: @accent;
+    background-color: @bg-glass-light;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0 0 0 8px;
+}
+
+/* Message box */
+message {
+    background-color: @bg-glass-light;
+    border: 2px solid;
+    border-color: @accent;
+    border-radius: 14px;
+    padding: 12px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: @fg;
+    padding: 8px;
+}
+
+/* Error message */
+error-message {
+    background-color: @bg-glass;
+    border: 2px solid;
+    border-color: @accent;
+    border-radius: 16px;
+    padding: 16px;
+}
