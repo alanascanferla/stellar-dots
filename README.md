@@ -206,6 +206,7 @@ cd stellar-dots
 - [Referência de Atalhos](docs/HOTKEYS.md)
 - [Guia de Customização](docs/CUSTOMIZACAO.md)
 - [Menu Glassmorphism](docs/GLASSMORPHISM_MENU.md)
+- [Troubleshooting](docs/TROUBLESHOOTING.md) ⭐ **Novo!**
 
 
 ## 🖼️ Screenshots
