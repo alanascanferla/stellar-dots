@@ -4,9 +4,9 @@
 
 # ✨ Stellar Dots ✨
 
-**Instalador Automático de Dotfiles para Hyprland**
+**Automatic Dotfiles Installer for Hyprland**
 
-*Inspirado na estética cozy do hyprstellar*
+*Inspired by the cozy aesthetics of hyprstellar*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-c4a7e7?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 [![Hyprland](https://img.shields.io/badge/Hyprland-Ready-9ccfd8?style=for-the-badge&logo=wayland&logoColor=white)](https://hyprland.org/)
@@ -17,140 +17,139 @@
   <img src="https://img.shields.io/badge/Glassmorphism-✨-e0def4?style=flat-square" alt="Glassmorphism">
   <img src="https://img.shields.io/badge/Gaming_Ready-🎮-eb6f92?style=flat-square" alt="Gaming">
   <img src="https://img.shields.io/badge/20+_Scripts-🛠️-9ccfd8?style=flat-square" alt="Scripts">
-  <img src="https://img.shields.io/badge/PT--BR-📝-c4a7e7?style=flat-square" alt="Portuguese">
 </p>
 
-[Instalação](#-instalação) • [Features](#-features) • [Temas](#-temas) • [Documentação](#-documentação) • [Screenshots](#-screenshots)
+**Languages:** [🇺🇸 English](#) • [🇧🇷 Português](README.pt-BR.md) • [🇪🇸 Español](#) • [🇫🇷 Français](#)
+
+[Installation](#-installation) • [Features](#-features) • [Themes](#-themes) • [Documentation](#-documentation) • [Screenshots](#-screenshots)
 
 </div>
 
 ---
 
-## 🚀 Destaques
+## 🚀 Highlights
 
 <div align="center">
 
-### ✨ Novo: Menu Glassmorphism
-Launchers modernos com efeito de vidro, gradientes rosa/roxo/vermelho e blur intenso.  
-Dois estilos disponíveis: **Sidebar compacto** e **Full menu** com busca.
+### ✨ New: Glassmorphism Menus
+Modern launchers with glass effect, pink/purple/red gradients and intense blur.  
+Two styles available: **Compact sidebar** and **Full menu** with search.
 
-### 🎨 Tema Stellar
-Tema exclusivo com paleta cozy e design premium.
+### 🎨 Stellar Theme
+Exclusive theme with cozy palette and premium design.
 
 ### 🎮 Gaming Ready
-Detecção automática de GPU, drivers e ferramentas de gaming.
+Automatic GPU detection, drivers and gaming tools.
 
-### 📦 20+ Scripts Utilitários
-Power menu, clipboard, network, bluetooth, pomodoro, backups e muito mais!
+### 📦 20+ Utility Scripts
+Power menu, clipboard, network, bluetooth, pomodoro, backups and much more!
 
 </div>
 
 ---
-
 
 ## 🌟 Features
 
 ### Core
-- ⚡ **Instalação One-Command** - Um único comando para setup completo
-- 🎨 **Temas Lindos** - Rosé Pine, Catppuccin Mocha, Nord e **Stellar (Novo!)**
-- 📊 **Escolha de Barra** - Waybar (Simples) ou Illogical-Impulse (Avançado com IA)
-- 🔒 **Backup Automático** - Seus configs antigos ficam seguros
-- 🚀 **Multi-Distro** - Suporte para Arch, Fedora, Debian/Ubuntu
-- 🎯 **TUI Interativa** - Interface linda no terminal
-- 📝 **Documentação PT-BR** - Tudo em português!
+- ⚡ **One-Command Installation** - Single command for complete setup
+- 🎨 **Beautiful Themes** - Rosé Pine, Catppuccin Mocha, Nord and **Stellar (New!)**
+- 📊 **Bar Choice** - Waybar (Simple) or Illogical-Impulse (Advanced with AI)
+- 🔒 **Automatic Backup** - Your old configs stay safe
+- 🚀 **Multi-Distro** - Support for Arch, Fedora, Debian/Ubuntu
+- 🎯 **Interactive TUI** - Beautiful terminal interface
+- 📝 **Complete Documentation** - Everything documented!
 
 ### Utilities
-- 🔌 **Power Menu** - Desligar, reiniciar, bloquear, suspender
-- 📋 **Clipboard Manager** - Histórico de clipboard com busca
-- 📡 **Network Manager** - Gerenciar WiFi facilmente
-- 🔵 **Bluetooth Manager** - Parear e conectar dispositivos
-- 🔊 **Audio Switcher** - Trocar dispositivos de áudio
-- 😊 **Emoji Picker** - Seletor de emojis com busca
+- 🔌 **Power Menu** - Shutdown, restart, lock, suspend
+- 📋 **Clipboard Manager** - Clipboard history with search
+- 📡 **Network Manager** - Manage WiFi easily
+- 🔵 **Bluetooth Manager** - Pair and connect devices
+- 🔊 **Audio Switcher** - Switch audio devices
+- 😊 **Emoji Picker** - Emoji selector with search
 
 ### Gaming
-- 🎮 **Suporte a Gaming** - Detecção automática de GPU e instalação de drivers/ferramentas
-- ⚡ **Performance Profiles** - Modos Performance, Balanced, Power Save
-- 🎯 **Game Launcher** - Launcher unificado para Steam, Lutris, Heroic
+- 🎮 **Gaming Support** - Automatic GPU detection and driver/tool installation
+- ⚡ **Performance Profiles** - Performance, Balanced, Power Save modes
+- 🎯 **Game Launcher** - Unified launcher for Steam, Lutris, Heroic
 
 ### Productivity
-- 🍅 **Pomodoro Timer** - Timer de produtividade com notificações
-- 🗂️ **Workspace Manager** - Gerenciar workspaces facilmente
+- 🍅 **Pomodoro Timer** - Productivity timer with notifications
+- 🗂️ **Workspace Manager** - Manage workspaces easily
 
 ### System
-- 📦 **Update Manager** - Atualizar sistema, Flatpak, dotfiles
-- 💾 **Backup Manager** - Criar, restaurar e gerenciar backups
+- 📦 **Update Manager** - Update system, Flatpak, dotfiles
+- 💾 **Backup Manager** - Create, restore and manage backups
 
 ### Visual
-- 🔄 **Theme Switcher** - Troque temas em tempo real
-- 📸 **Scripts Utilitários** - Screenshot, wallpaper, gravação de tela
-- 🌊 **Animações Suaves** - Transições e efeitos modernos
-- 💎 **Glassmorphism** - Blur e transparência em tudo
-- ✨ **Menu Glassmorphism** - Launchers modernos com efeito de vidro (sidebar + full menu)
+- 🔄 **Theme Switcher** - Switch themes in real-time
+- 📸 **Utility Scripts** - Screenshot, wallpaper, screen recording
+- 🌊 **Smooth Animations** - Modern transitions and effects
+- 💎 **Glassmorphism** - Blur and transparency everywhere
+- ✨ **Glassmorphism Menus** - Modern launchers with glass effect (sidebar + full menu)
 
+## 🎨 Themes
 
-## 🎨 Temas
-
-### Rosé Pine (Padrão)
-Tema suave e aconchegante com tons de rosa, roxo e azul. Inspirado no hyprstellar.
+### Rosé Pine (Default)
+Soft and cozy theme with pink, purple and blue tones. Inspired by hyprstellar.
 
 ### Catppuccin Mocha
-Paleta pastel moderna com tons de café, chocolate e cores vibrantes.
+Modern pastel palette with coffee, chocolate and vibrant colors.
 
 ### Nord
-Tema ártico minimalista com azuis gelados e cinzas elegantes.
+Minimalist arctic theme with icy blues and elegant grays.
 
-## 📊 Opções de Barra
+## 📊 Bar Options
 
-### Waybar (Recomendado)
-Barra superior minimalista e estável com módulos essenciais. Leve, rápido e fácil de customizar.
+### Waybar (Recommended)
+Minimalist and stable top bar with essential modules. Lightweight, fast and easy to customize.
 
-### illogical-impulse (Avançado)
-Sistema completo de widgets com features avançadas:
-- 🔍 **Overview** - Live previews de apps abertos
-- 🤖 **IA Integrada** - Gemini API e Ollama
-- 🎨 **Cores Auto-geradas** - Material Design baseado no wallpaper
-- 🎯 **Widgets Avançados** - Customizáveis e interativos
+### illogical-impulse (Advanced)
+Complete widget system with advanced features:
+- 🔍 **Overview** - Live previews of open apps
+- 🤖 **Integrated AI** - Gemini API and Ollama
+- 🎨 **Auto-generated Colors** - Material Design based on wallpaper
+- 🎯 **Advanced Widgets** - Customizable and interactive
 
-> **Nota:** illogical-impulse requer mais dependências e é instalado via script oficial do [end-4/dots-hyprland](https://github.com/end-4/dots-hyprland)
+> **Note:** illogical-impulse requires more dependencies and is installed via official script from [end-4/dots-hyprland](https://github.com/end-4/dots-hyprland)
 
-## 🎮 Suporte a Gaming
+## 🎮 Gaming Support
 
-O Stellar Dots inclui setup completo para gaming com:
+Stellar Dots includes complete gaming setup with:
 
-### Detecção Automática de GPU
-- ✅ **NVIDIA** - Drivers proprietários + Vulkan
+### Automatic GPU Detection
+- ✅ **NVIDIA** - Proprietary drivers + Vulkan
 - ✅ **AMD** - Mesa + AMDVLK + Vulkan
 - ✅ **Intel** - Mesa + Vulkan
-- ✅ **Sistemas Híbridos** - Suporte a laptops com GPU dedicada + integrada
+- ✅ **Hybrid Systems** - Support for laptops with dedicated + integrated GPU
 
-### Ferramentas Instaladas
-- 🎮 **Steam** - Plataforma de jogos
-- 🎯 **Lutris** - Gerenciador de jogos
-- 🍷 **Wine/Proton** - Compatibilidade com jogos Windows
-- ⚡ **GameMode** - Otimizações de performance
-- 📊 **MangoHud** - Overlay de FPS e monitoramento
-- 🎨 **GOverlay** - Interface gráfica para MangoHud
+### Installed Tools
+- 🎮 **Steam** - Gaming platform
+- 🎯 **Lutris** - Game manager
+- 🍷 **Wine/Proton** - Windows games compatibility
+- ⚡ **GameMode** - Performance optimizations
+- 📊 **MangoHud** - FPS overlay and monitoring
+- 🎨 **GOverlay** - GUI for MangoHud
 
-### Otimizações Hyprland
-- Desabilita animações em jogos para melhor performance
-- Window rules específicas para jogos populares
-- Suporte a VRR (Variable Refresh Rate)
-- Configurações de fullscreen otimizadas
+### Hyprland Optimizations
+- Disables animations in games for better performance
+- Specific window rules for popular games
+- VRR (Variable Refresh Rate) support
+- Optimized fullscreen settings
 
-## 📦 O Que Está Incluído
+## 📦 What's Included
 
-- **Hyprland** - Compositor Wayland com animações incríveis
-- **Waybar** - Barra superior customizada com módulos úteis
-- **Kitty** - Terminal rápido com blur e transparência
-- **Rofi** - Launcher de apps com design moderno + menus glassmorphism
-- **Hyprlock** - Lock screen com blur e efeitos
-- **Hypridle** - Gerenciamento de idle e suspend
-- **Starship** - Prompt bonito e informativo
-- **Scripts** - 20+ scripts utilitários (wallpaper, screenshot, theme switcher, gaming, etc)
+- **Hyprland** - Wayland compositor with amazing animations
+- **Waybar** - Customized top bar with useful modules
+- **Kitty** - Fast terminal with blur and transparency
+- **Rofi** - Modern app launcher + glassmorphism menus
+- **Hyprlock** - Lock screen with blur and effects
+- **Hypridle** - Idle and suspend management
+- **Starship** - Beautiful and informative prompt
+- **Scripts** - 20+ utility scripts (wallpaper, screenshot, theme switcher, gaming, etc)
 
-## 🚀 Instalação
+## 🚀 Installation
 
-### Instalação Rápida
+### Quick Installation
 
 ```bash
 git clone https://github.com/alanascanferla/stellar-dots.git
@@ -158,70 +157,68 @@ cd stellar-dots
 ./install.sh
 ```
 
-### Instalação Manual
+### Manual Installation
 
-1. **Clone o repositório:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/alanascanferla/stellar-dots.git
    cd stellar-dots
    ```
 
-2. **Execute o instalador:**
+2. **Run the installer:**
    ```bash
    chmod +x install.sh
    ./install.sh
    ```
 
-3. **Siga as instruções na tela:**
-   - Escolha se quer instalar dependências
-   - Selecione a barra (Waybar ou illogical-impulse)
-   - Selecione seu tema favorito
-   - Aguarde a instalação
+3. **Follow the on-screen instructions:**
+   - Choose whether to install dependencies
+   - Select the bar (Waybar or illogical-impulse)
+   - Select your favorite theme
+   - Wait for installation
 
-4. **Faça logout e selecione Hyprland no seu display manager**
+4. **Logout and select Hyprland in your display manager**
 
-## ⌨️ Atalhos Principais
+## ⌨️ Main Shortcuts
 
-| Atalho | Ação |
-|--------|------|
-| `Super + Return` | Abrir terminal |
-| `Super + Q` | Fechar janela |
-| `Super + D` | Launcher de apps |
-| `Super + Space` | Menu glassmorphism (full) |
-| `Super + A` | Menu glassmorphism (sidebar) |
-| `Super + W` | Trocar wallpaper |
-| `Super + T` | Trocar tema |
+| Shortcut | Action |
+|----------|--------|
+| `Super + Return` | Open terminal |
+| `Super + Q` | Close window |
+| `Super + D` | App launcher |
+| `Super + Space` | Glassmorphism menu (full) |
+| `Super + A` | Glassmorphism menu (sidebar) |
+| `Super + W` | Change wallpaper |
+| `Super + T` | Change theme |
 | `Super + L` | Lock screen |
-| `Super + Print` | Screenshot de área |
-| `Print` | Screenshot completo |
-| `Super + R` | Gravar tela |
-| `Super + 1-9` | Trocar workspace |
+| `Super + Print` | Area screenshot |
+| `Print` | Full screenshot |
+| `Super + R` | Screen recording |
+| `Super + 1-9` | Switch workspace |
 
+[View all shortcuts](docs/HOTKEYS.md)
 
-[Ver todos os atalhos](docs/HOTKEYS.md)
+## 📖 Documentation
 
-## 📖 Documentação
-
-- [Guia de Instalação Completo](docs/INSTALACAO.md)
-- [Referência de Atalhos](docs/HOTKEYS.md)
-- [Guia de Customização](docs/CUSTOMIZACAO.md)
-- [Menu Glassmorphism](docs/GLASSMORPHISM_MENU.md)
-- [Troubleshooting](docs/TROUBLESHOOTING.md) ⭐ **Novo!**
-
+- [Complete Installation Guide](docs/INSTALACAO.md)
+- [Shortcuts Reference](docs/HOTKEYS.md)
+- [Customization Guide](docs/CUSTOMIZACAO.md)
+- [Glassmorphism Menu](docs/GLASSMORPHISM_MENU.md)
+- [Troubleshooting](docs/TROUBLESHOOTING.md) ⭐ **New!**
 
 ## 🖼️ Screenshots
 
-*Screenshots em breve!*
+*Screenshots coming soon!*
 
-### ✨ Destaques Visuais
-- Menu glassmorphism com efeito de vidro e gradientes
-- Animações suaves e transições modernas
-- Blur e transparência em todo o sistema
-- Temas cozy e aconchegantes
+### ✨ Visual Highlights
+- Glassmorphism menu with glass effect and gradients
+- Smooth animations and modern transitions
+- Blur and transparency throughout the system
+- Cozy and comfortable themes
 
-## 🛠️ Dependências
+## 🛠️ Dependencies
 
-### Essenciais
+### Essential
 - Hyprland
 - Waybar
 - Kitty
@@ -231,50 +228,50 @@ cd stellar-dots
 - Hyprlock
 - Hypridle
 
-### Utilitários
+### Utilities
 - grim & slurp (screenshots)
 - wl-clipboard
 - brightnessctl
 - playerctl
 - pavucontrol
 
-### Fontes
+### Fonts
 - JetBrainsMono Nerd Font
 - Noto Emoji
 
-### Opcional
-- Pywal16 (colorschemes dinâmicos)
-- wf-recorder (gravação de tela)
+### Optional
+- Pywal16 (dynamic colorschemes)
+- wf-recorder (screen recording)
 
-## 🤝 Contribuindo
+## 🤝 Contributing
 
-Contribuições são bem-vindas! Sinta-se livre para:
-- Reportar bugs
-- Sugerir novas features
-- Enviar pull requests
-- Compartilhar seus temas customizados
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+- Share your custom themes
 
-## 📜 Licença
+## 📜 License
 
-Este projeto está sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
+This project is under the MIT license. See [LICENSE](LICENSE) for more details.
 
-## 💖 Créditos
+## 💖 Credits
 
-- Inspirado por [hyprstellar](https://github.com/xeji01/hyprstellar)
-- [illogical-impulse](https://github.com/end-4/dots-hyprland) por end-4 (opção de barra avançada)
+- Inspired by [hyprstellar](https://github.com/xeji01/hyprstellar)
+- [illogical-impulse](https://github.com/end-4/dots-hyprland) by end-4 (advanced bar option)
 - [Rosé Pine](https://rosepinetheme.com/) theme
 - [Catppuccin](https://github.com/catppuccin/catppuccin) theme
 - [Nord](https://www.nordtheme.com/) theme
 - [Hyprland](https://hyprland.org/) compositor
 
-## ⭐ Suporte
+## ⭐ Support
 
-Se você gostou deste projeto, deixe uma ⭐ no repositório!
+If you liked this project, leave a ⭐ on the repository!
 
 ---
 
 <div align="center">
 
-**Feito com 💜 e muita ☕**
+**Made with 💜 and lots of ☕**
 
 </div>
