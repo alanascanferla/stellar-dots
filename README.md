@@ -323,7 +323,11 @@ If something doesn't work:
 
 ## 🖼️ Screenshots
 
-*Screenshots coming soon!*
+### 🌹 Rosé Pine Desktop
+![Rosé Pine Desktop](.github/screenshots/desktop/rose-pine.png)
+
+### 💎 Glassmorphism Menu
+![Glassmorphism Menu](.github/screenshots/features/glassmorphism-full.png)
 
 ### ✨ Visual Highlights
 - Glassmorphism menu with glass effect and gradients
