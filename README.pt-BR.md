@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-c4a7e7?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 [![Hyprland](https://img.shields.io/badge/Hyprland-Ready-9ccfd8?style=for-the-badge&logo=wayland&logoColor=white)](https://hyprland.org/)
 [![Arch Linux](https://img.shields.io/badge/Arch-Supported-eb6f92?style=for-the-badge&logo=archlinux&logoColor=white)](https://archlinux.org/)
-[![Stars](https://img.shields.io/github/stars/alanascanferla/stellar-dots?style=for-the-badge&logo=github&color=f6c177&logoColor=white)](https://github.com/alanascanferla/stellar-dots/stargazers)
+[![Stars](https://img.shields.io/github/stars/NoctuaCoder/stellar-dots?style=for-the-badge&logo=github&color=f6c177&logoColor=white)](https://github.com/NoctuaCoder/stellar-dots/stargazers)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Glassmorphism-✨-e0def4?style=flat-square" alt="Glassmorphism">
@@ -153,7 +153,7 @@ O Stellar Dots inclui setup completo para gaming com:
 ### Instalação Rápida
 
 ```bash
-git clone https://github.com/alanascanferla/stellar-dots.git
+git clone https://github.com/NoctuaCoder/stellar-dots.git
 cd stellar-dots
 ./install.sh
 ```
@@ -162,7 +162,7 @@ cd stellar-dots
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/alanascanferla/stellar-dots.git
+   git clone https://github.com/NoctuaCoder/stellar-dots.git
    cd stellar-dots
    ```
 

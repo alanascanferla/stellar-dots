@@ -493,7 +493,7 @@ Se nenhuma solução funcionou:
    ```
 
 2. **Abra uma issue no GitHub:**
-   - https://github.com/alanascanferla/stellar-dots/issues
+   - https://github.com/NoctuaCoder/stellar-dots/issues
    - Inclua: logs, distro, GPU, descrição do problema
 
 3. **Restaure backup:**
@@ -515,6 +515,6 @@ Se nenhuma solução funcionou:
 
 **Precisa de mais ajuda?** 
 
-[Abrir Issue](https://github.com/alanascanferla/stellar-dots/issues) • [Documentação](../README.md)
+[Abrir Issue](https://github.com/NoctuaCoder/stellar-dots/issues) • [Documentação](../README.md)
 
 </div>

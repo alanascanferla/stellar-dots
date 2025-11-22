@@ -239,7 +239,7 @@ If something breaks:
 
 4. **Get Help**
    - Read: `docs/TROUBLESHOOTING.md`
-   - Issue: https://github.com/alanascanferla/stellar-dots/issues
+   - Issue: https://github.com/NoctuaCoder/stellar-dots/issues
 
 ## Security Considerations
 
@@ -266,7 +266,7 @@ This is open source. You can (and should):
 - Report security issues
 
 **Security Issue?** Email: security@stellar-dots.dev (coming soon)  
-**Or open issue**: https://github.com/alanascanferla/stellar-dots/issues
+**Or open issue**: https://github.com/NoctuaCoder/stellar-dots/issues
 
 ---
 

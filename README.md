@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-c4a7e7?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://opensource.org/licenses/MIT)
 [![Hyprland](https://img.shields.io/badge/Hyprland-Ready-9ccfd8?style=for-the-badge&logo=wayland&logoColor=white)](https://hyprland.org/)
 [![Arch Linux](https://img.shields.io/badge/Arch-Supported-eb6f92?style=for-the-badge&logo=archlinux&logoColor=white)](https://archlinux.org/)
-[![Stars](https://img.shields.io/github/stars/alanascanferla/stellar-dots?style=for-the-badge&logo=github&color=f6c177&logoColor=white)](https://github.com/alanascanferla/stellar-dots/stargazers)
+[![Stars](https://img.shields.io/github/stars/NoctuaCoder/stellar-dots?style=for-the-badge&logo=github&color=f6c177&logoColor=white)](https://github.com/NoctuaCoder/stellar-dots/stargazers)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Glassmorphism-✨-e0def4?style=flat-square" alt="Glassmorphism">
@@ -207,7 +207,7 @@ Stellar Dots includes complete gaming setup with:
 ### Quick Installation
 
 ```bash
-git clone https://github.com/alanascanferla/stellar-dots.git
+git clone https://github.com/NoctuaCoder/stellar-dots.git
 cd stellar-dots
 ./install.sh
 ```
@@ -216,7 +216,7 @@ cd stellar-dots
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/alanascanferla/stellar-dots.git
+   git clone https://github.com/NoctuaCoder/stellar-dots.git
    cd stellar-dots
    ```
 
@@ -443,12 +443,12 @@ Contributions are welcome! We'd love your help making Stellar Dots even better.
 ### How to Contribute
 
 1. **Report Bugs**
-   - Open an [issue](https://github.com/alanascanferla/stellar-dots/issues)
+   - Open an [issue](https://github.com/NoctuaCoder/stellar-dots/issues)
    - Include: distro, GPU, error logs
    - Steps to reproduce
 
 2. **Suggest Features**
-   - Open an [issue](https://github.com/alanascanferla/stellar-dots/issues)
+   - Open an [issue](https://github.com/NoctuaCoder/stellar-dots/issues)
    - Describe the feature
    - Explain why it would be useful
 
@@ -564,8 +564,8 @@ This project is under the MIT license. See [LICENSE](LICENSE) for more details.
 
 If you liked this project, leave a ⭐ on the repository!
 
-**Found a bug?** [Open an issue](https://github.com/alanascanferla/stellar-dots/issues)  
-**Have a question?** [Start a discussion](https://github.com/alanascanferla/stellar-dots/discussions)  
+**Found a bug?** [Open an issue](https://github.com/NoctuaCoder/stellar-dots/issues)  
+**Have a question?** [Start a discussion](https://github.com/NoctuaCoder/stellar-dots/discussions)  
 **Want to contribute?** See [Contributing](#-contributing) section above!
 
 ---
@@ -576,7 +576,7 @@ If you liked this project, leave a ⭐ on the repository!
 
 **Star this repo if you find it useful!** ⭐
 
-[![GitHub stars](https://img.shields.io/github/stars/alanascanferla/stellar-dots?style=social)](https://github.com/alanascanferla/stellar-dots/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/alanascanferla/stellar-dots?style=social)](https://github.com/alanascanferla/stellar-dots/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/NoctuaCoder/stellar-dots?style=social)](https://github.com/NoctuaCoder/stellar-dots/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/NoctuaCoder/stellar-dots?style=social)](https://github.com/NoctuaCoder/stellar-dots/network/members)
 
 </div>
